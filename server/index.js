@@ -138,7 +138,7 @@ if (shouldSeedDemo) {
 }
 
 const app = express();
-
+app.set("trust proxy", 1);
 // Security Hardening: Helmet & CORS
 app.use(helmet({
   contentSecurityPolicy: false,
