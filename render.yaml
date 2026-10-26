@@ -2,21 +2,13 @@ services:
   - type: web
     name: objectmemory
     runtime: node
-    plan: starter
+    plan: free
     buildCommand: npm ci && npm run build
     startCommand: npm start
     healthCheckPath: /api/health
-    disk:
-      name: objectmemory-data
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
       - key: NODE_ENV
         value: production
-      - key: OBJECTMEMORY_DATA_DIR
-        value: /var/data
-      - key: OBJECTMEMORY_UPLOAD_DIR
-        value: /var/data/uploads
       - key: OBJECTMEMORY_JWT_SECRET
         generateValue: true
       - key: ENABLE_DEMO_ACCOUNT

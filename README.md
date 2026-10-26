@@ -152,7 +152,7 @@ Within any individual possession's view, the assistant specializes in that item'
 
 ## Certified Insurance Claim Dossiers
 
-When filing an insurance claim or substantiating replacement value, adjusters require verified documentation.
+When filing an insurance claim or substantiating replacement value, adjusters require verified documentation. 
 
 ObjectMemory features an integrated **Insurance Dossier Generator**:
 1. Open any possession and click **"Insurance Dossier"**.
@@ -342,3 +342,7 @@ Released under the **MIT License**. See `LICENSE` for details.
 **ObjectMemory**: Because everything you own has a story.
 
 </div>
+
+## Render Free deployment warning
+
+The free Render Blueprint is for portfolio demos only. Render Free uses an ephemeral filesystem: the SQLite database (`data/objectmemory.sqlite` and its WAL files) and uploaded files (`uploads/`) can be lost whenever the service redeploys, restarts, or spins down after 15 minutes idle. Use disposable sample data only; do not store real personal documents or rely on this deployment for durable storage. See `DEPLOY_RENDER.md`.
