@@ -1,0 +1,35 @@
+{
+  "name": "objectmemory-fullstack",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node server/index.js\" \"vite\"",
+    "server": "node server/index.js",
+    "client": "vite",
+    "build": "vite build",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "@tensorflow-models/mobilenet": "latest",
+    "@tensorflow/tfjs": "latest",
+    "@vitejs/plugin-react": "latest",
+    "bcryptjs": "latest",
+    "concurrently": "latest",
+    "cors": "latest",
+    "express": "latest",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "latest",
+    "lucide-react": "latest",
+    "marked": "^18.1.0",
+    "multer": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "vite": "latest"
+  },
+  "engines": {
+    "node": ">=22.13.0 <25.0.0"
+  }
+}
